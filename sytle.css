@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+}
+.container {
+  width: 400px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.299);
+}
+.screen {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: right;
+  word-wrap: break-word;
+  word-break: break-all;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.904);
+}
+#pre {
+  min-height: 30px;
+  font-size: 20px;
+}
+#show {
+  min-height: 64px;
+  font-size: 40px;
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.btn {
+  border: 1px solid black;
+  outline: none;
+  border-radius: 3px;
+  width: 80px;
+  height: 80px;
+  font-size: 1em;
+}
+#cler {
+  grid-column: 3/-1;
+  background-color: rgb(226, 161, 161);
+  width: 173px;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+#del {
+  grid-column: 1/3;
+  font-size: 1.2em;
+  width: 173px;
+  background-color: rgb(124, 150, 230);
+  text-transform: uppercase;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.5;
+}
+.fa-github {
+  margin-right: 3px;
+  color: black;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out;
+}
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
+.btn:hover {
+  background-color: rgba(216, 207, 207, 0.613);
+}
+#cler:hover {
+  background-color: rgb(193, 118, 118);
+}
+#del:hover {
+  background-color: rgb(82, 74, 196);
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sytle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Calculator</title>
+    <link rel=" icon" href="calc.png" />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="screen">
+          <div id="pre"></div>
+          <div id="show">0</div>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="del" onclick="this.blur()">delete</button>
+          <button class="btn" id="cler" onclick="this.blur()">clear</button>
+          <button class="btn number" onclick="this.blur()">7</button>
+          <button class="btn number" onclick="this.blur()">8</button>
+          <button class="btn number" onclick="this.blur()">9</button>
+          <button class="btn op" onclick="this.blur()">÷</button>
+          <button class="btn number" onclick="this.blur()">4</button>
+          <button class="btn number" onclick="this.blur()">5</button>
+          <button class="btn number" onclick="this.blur()">6</button>
+          <button class="btn op" onclick="this.blur()">×</button>
+          <button class="btn number" onclick="this.blur()">1</button>
+          <button class="btn number" onclick="this.blur()">2</button>
+          <button class="btn number" onclick="this.blur()">3</button>
+          <button class="btn op" onclick="this.blur()">-</button>
+          <button class="btn" onclick="this.blur()" id="point">.</button>
+          <button class="btn number" onclick="this.blur()">0</button>
+          <button class="btn" id="equal" onclick="this.blur()">=</button>
+          <button class="btn op" onclick="this.blur()">+</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>
+        Copyright ©
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        mostafaGommed
+      </p>
+      <a href="https://github.com/mostafa20021212" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
